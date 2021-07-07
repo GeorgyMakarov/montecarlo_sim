@@ -36,7 +36,7 @@ prepare_data <- function(ticker = NULL,
   sd_ret            <- sd(rets)
   
   res <- list(stock, adjusted, avg_ret, sd_ret)
-  
+  names(res) <- c("stock", "adjusted", "avg_ret", "sd_ret")
   return(res)
   
 }
